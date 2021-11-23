@@ -6,12 +6,19 @@ default:
 stages:
   - cmd
 
-sit-x15:
+sit-pim-import:
   stage: cmd
   script:
-    - echo "Running $IMPORT_COMMAND in $ENV_NAME ($NAMESPACE namespace)!"
-    - kubectl -n ${NAMESPACE} get pod --selector app.kubernetes.io/name=x15-platform -o=name | head -1
+    - echo "Running pim import in $ENV_NAME env ($NAMESPACE namespace)!"
+    - export POD_NAME=$(kubectl -n ${NAMESPACE} get pod --selector app.kubernetes.io/name=x15-platform -o=name | head -1)
+    - echo "Detected pod name ${POD_NAME}!"
+    - echo "Running bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION pim full"
+    - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION pim full
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule" && $ENV_NAME == "sit" && $IMPORT_COMMAND && $NAMESPACE'
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "sit"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION
   tags:
     - sit

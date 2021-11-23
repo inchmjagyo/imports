@@ -4,23 +4,13 @@ default:
     entrypoint: [""]
 
 stages:
-  - pim
-  - pim-translations
+  - cmd
 
-sit-pim-full:
-  stage: pim
+sit-x15:
+  stage: cmd
   script:
-    - echo "Running app:configurator:import $REGION $COUNTRY $DISTRIBUTION pim full"
+    - echo "Running $IMPORT_COMMAND"
   rules:
-    - if: $CI_PIPELINE_SOURCE != "schedule" && $REGION && $COUNTRY && $DISTRIBUTION
-  tags:
-    - sit
-
-sit-pim-translations-full:
-  stage: pim-translations
-  script:
-    - echo "Running app:configurator:import $REGION $COUNTRY $DISTRIBUTION pim_translation full"
-  rules:
-    - if: $CI_PIPELINE_SOURCE != "schedule" && $REGION && $COUNTRY && $DISTRIBUTION
+    - if: $CI_PIPELINE_SOURCE != "schedule" && $ENV_NAME == "sit" && $IMPORT_COMMAND
   tags:
     - sit

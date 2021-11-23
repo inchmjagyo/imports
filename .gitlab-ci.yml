@@ -1,0 +1,26 @@
+default:
+  image:
+    name: bitnami/kubectl:1.22
+    entrypoint: [""]
+
+stages:
+  - pim
+  - pim-translations
+
+sit-pim-full:
+  stage: pim
+  script:
+    - echo "Running app:configurator:import $REGION $COUNTRY $DISTRIBUTION pim full"
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule" && $REGION && $COUNTRY && $DISTRIBUTION
+  tags:
+    - sit
+
+sit-pim-translations-full:
+  stage: pim-translations
+  script:
+    - echo "Running app:configurator:import $REGION $COUNTRY $DISTRIBUTION pim_translation full"
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule" && $REGION && $COUNTRY && $DISTRIBUTION
+  tags:
+    - sit

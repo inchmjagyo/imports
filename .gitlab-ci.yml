@@ -10,7 +10,7 @@ sit-x15:
   stage: cmd
   script:
     - echo "Running $IMPORT_COMMAND ($CI_PIPELINE_SOURCE)"
-  # rules:
-  #   - if: $CI_PIPELINE_SOURCE != "schedule" && $ENV_NAME == "sit" && $IMPORT_COMMAND
+  rules:
+    - if: '$CI_PIPELINE_SOURCE != "schedule" && $ENV_NAME == "sit" && $IMPORT_COMMAND'
   tags:
     - sit

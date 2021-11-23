@@ -9,8 +9,9 @@ stages:
 sit-x15:
   stage: cmd
   script:
-    - echo "Running $IMPORT_COMMAND ($CI_PIPELINE_SOURCE)"
+    - echo "Running $IMPORT_COMMAND in $ENV_NAME ($NAMESPACE namespace)!"
+    - kubectl -n ${NAMESPACE} get pod --selector app.kubernetes.io/name=x15-platform -o=name | head -1
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "schedule" && $ENV_NAME == "sit" && $IMPORT_COMMAND'
+    - if: '$CI_PIPELINE_SOURCE == "schedule" && $ENV_NAME == "sit" && $IMPORT_COMMAND && $NAMESPACE'
   tags:
     - sit

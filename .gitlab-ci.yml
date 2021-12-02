@@ -14,20 +14,17 @@ stages:
     - echo "Detected pod name ${POD_NAME}!"
     - echo "Running bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION $IMPORT_COMMAND"
     - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION $IMPORT_COMMAND
-  rules:
-    - if: $CI_PIPELINE_SOURCE != "schedule"
-      when: never
-    - if: $ENV_NAME != "sit"
-      when: never
-    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
 
 dev-import:
   extends: .import
   variables:
     NAMESPACE: dev
   rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
     - if: $ENV_NAME != "dev"
       when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
     - dev
 
@@ -36,8 +33,11 @@ dev-hk-import:
   variables:
     NAMESPACE: dev-hk
   rules:
-    - if: $ENV_NAME != "dev-hk"
+    - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
+    - if: $ENV_NAME != "dev"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
     - dev
 
@@ -46,8 +46,11 @@ sit-import:
   variables:
     NAMESPACE: sit
   rules:
-    - if: $ENV_NAME != "sit"
+    - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
+    - if: $ENV_NAME != "dev"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
     - sit
 
@@ -56,8 +59,11 @@ sit-hk-import:
   variables:
     NAMESPACE: sit-hk
   rules:
-    - if: $ENV_NAME != "sit-hk"
+    - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
+    - if: $ENV_NAME != "dev"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
     - sit
 
@@ -66,8 +72,11 @@ uat-import:
   variables:
     NAMESPACE: uat
   rules:
-    - if: $ENV_NAME != "uat"
+    - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
+    - if: $ENV_NAME != "dev"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
     - uat
 
@@ -76,7 +85,10 @@ uat-hk-import:
   variables:
     NAMESPACE: uat-hk
   rules:
-    - if: $ENV_NAME != "uat-hk"
+    - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
+    - if: $ENV_NAME != "dev"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
     - uat

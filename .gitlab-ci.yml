@@ -35,7 +35,7 @@ dev-hk-import:
   rules:
     - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
-    - if: $ENV_NAME != "dev"
+    - if: $ENV_NAME != "dev-hk"
       when: never
     - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
@@ -48,7 +48,7 @@ sit-import:
   rules:
     - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
-    - if: $ENV_NAME != "dev"
+    - if: $ENV_NAME != "sit"
       when: never
     - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
@@ -61,7 +61,7 @@ sit-hk-import:
   rules:
     - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
-    - if: $ENV_NAME != "dev"
+    - if: $ENV_NAME != "sit-hk"
       when: never
     - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
@@ -74,7 +74,7 @@ uat-import:
   rules:
     - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
-    - if: $ENV_NAME != "dev"
+    - if: $ENV_NAME != "uat"
       when: never
     - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:
@@ -87,7 +87,7 @@ uat-hk-import:
   rules:
     - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
-    - if: $ENV_NAME != "dev"
+    - if: $ENV_NAME != "uat-hk"
       when: never
     - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
   tags:

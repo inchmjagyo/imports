@@ -6,19 +6,77 @@ default:
 stages:
   - cmd
 
-sit-pim-import:
+.import:
   stage: cmd
   script:
-    - echo "Running pim import in $ENV_NAME env ($NAMESPACE namespace)!"
+    - echo "Running car import in $ENV_NAME env ($NAMESPACE namespace)!"
     - export POD_NAME=$(kubectl -n ${NAMESPACE} get pod --selector app.kubernetes.io/name=x15-platform -o=name | head -1)
     - echo "Detected pod name ${POD_NAME}!"
-    - echo "Running bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION pim full"
-    - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION pim full
+    - echo "Running bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION $IMPORT_COMMAND"
+    - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION $IMPORT_COMMAND
   rules:
     - if: $CI_PIPELINE_SOURCE != "schedule"
       when: never
     - if: $ENV_NAME != "sit"
       when: never
-    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+
+dev-import:
+  extends: .import
+  variables:
+    NAMESPACE: dev
+  rules:
+    - if: $ENV_NAME != "dev"
+      when: never
+  tags:
+    - dev
+
+dev-hk-import:
+  extends: .import
+  variables:
+    NAMESPACE: dev-hk
+  rules:
+    - if: $ENV_NAME != "dev-hk"
+      when: never
+  tags:
+    - dev
+
+sit-import:
+  extends: .import
+  variables:
+    NAMESPACE: sit
+  rules:
+    - if: $ENV_NAME != "sit"
+      when: never
   tags:
     - sit
+
+sit-hk-import:
+  extends: .import
+  variables:
+    NAMESPACE: sit-hk
+  rules:
+    - if: $ENV_NAME != "sit-hk"
+      when: never
+  tags:
+    - sit
+
+uat-import:
+  extends: .import
+  variables:
+    NAMESPACE: uat
+  rules:
+    - if: $ENV_NAME != "uat"
+      when: never
+  tags:
+    - uat
+
+uat-hk-import:
+  extends: .import
+  variables:
+    NAMESPACE: uat-hk
+  rules:
+    - if: $ENV_NAME != "uat-hk"
+      when: never
+  tags:
+    - uat

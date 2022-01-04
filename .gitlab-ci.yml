@@ -179,3 +179,215 @@ uat-hk-cache:
     - if: $NAMESPACE && $CACHE_CLEAR
   tags:
     - uat
+
+# Europe Cluster
+europe-pre-prod-import:
+  extends: .import
+  variables:
+    NAMESPACE: pre-prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "europe-pre-prod"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - europe-pre-prod
+
+europe-pre-prod-cache:
+  extends: .cache
+  variables:
+    NAMESPACE: pre-prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "europe-pre-prod"
+      when: never
+    - if: $NAMESPACE && $CACHE_CLEAR
+  tags:
+    - europe-pre-prod
+
+europe-prod-import:
+  extends: .import
+  variables:
+    NAMESPACE: prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "europe-prod"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - europe-prod
+
+europe-prod-cache:
+  extends: .cache
+  variables:
+    NAMESPACE: prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "europe-prod"
+      when: never
+    - if: $NAMESPACE && $CACHE_CLEAR
+  tags:
+    - europe-prod
+
+# Brazil Cluster
+brazil-pre-prod-import:
+  extends: .import
+  variables:
+    NAMESPACE: pre-prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "brazil-pre-prod"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - brazil-pre-prod
+
+brazil-pre-prod-cache:
+  extends: .cache
+  variables:
+    NAMESPACE: pre-prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "brazil-pre-prod"
+      when: never
+    - if: $NAMESPACE && $CACHE_CLEAR
+  tags:
+    - brazil-pre-prod
+
+brazil-prod-import:
+  extends: .import
+  variables:
+    NAMESPACE: prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "brazil-prod"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - brazil-prod
+
+brazil-prod-cache:
+  extends: .cache
+  variables:
+    NAMESPACE: prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "brazil-prod"
+      when: never
+    - if: $NAMESPACE && $CACHE_CLEAR
+  tags:
+    - brazil-prod
+
+# Australia Cluster
+australia-pre-prod-import:
+  extends: .import
+  variables:
+    NAMESPACE: pre-prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "australia-pre-prod"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - australia-pre-prod
+
+australia-pre-prod-cache:
+  extends: .cache
+  variables:
+    NAMESPACE: pre-prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "australia-pre-prod"
+      when: never
+    - if: $NAMESPACE && $CACHE_CLEAR
+  tags:
+    - australia-pre-prod
+
+australia-prod-import:
+  extends: .import
+  variables:
+    NAMESPACE: prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "australia-prod"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - australia-prod
+
+australia-prod-cache:
+  extends: .cache
+  variables:
+    NAMESPACE: prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "australia-prod"
+      when: never
+    - if: $NAMESPACE && $CACHE_CLEAR
+  tags:
+    - australia-prod
+
+# Australia Cluster (HK)
+hong-kong-pre-prod-import:
+  extends: .import
+  variables:
+    NAMESPACE: pre-prod-hk
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "hong-kong-pre-prod"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - hong-kong-pre-prod
+
+hong-kong-pre-prod-cache:
+  extends: .cache
+  variables:
+    NAMESPACE: pre-prod-hk
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "hong-kong-pre-prod"
+      when: never
+    - if: $NAMESPACE && $CACHE_CLEAR
+  tags:
+    - hong-kong-pre-prod
+
+hong-kong-prod-import:
+  extends: .import
+  variables:
+    NAMESPACE: prod-hk
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "hong-kong-prod"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - hong-kong-prod
+
+hong-kong-prod-cache:
+  extends: .cache
+  variables:
+    NAMESPACE: prod-hk
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "hong-kong-prod"
+      when: never
+    - if: $NAMESPACE && $CACHE_CLEAR
+  tags:
+    - hong-kong-prod

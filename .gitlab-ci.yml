@@ -10,7 +10,7 @@ stages:
   stage: cmd
   before_script:
     - echo "Running car import in $ENV_NAME env ($NAMESPACE namespace)!"
-    - export POD_NAME=$(kubectl -n ${NAMESPACE} get pod --selector app.kubernetes.io/name=x15-platform -o=name | head -1)
+    - export POD_NAME=$(kubectl -n ${NAMESPACE} get pod --selector app.kubernetes.io/name=x15-platform-api -o=name | head -1)
     - echo "Detected pod name ${POD_NAME}!"
   script:
     - echo "Running bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION $IMPORT_COMMAND"

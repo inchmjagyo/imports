@@ -37,6 +37,18 @@ dev-import:
   tags:
     - dev
 
+dev-pim_translation:
+  extends: .pim_translation
+    NAMESPACE: dev
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "dev"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - dev
+
 dev-cache:
   extends: .cache
   variables:

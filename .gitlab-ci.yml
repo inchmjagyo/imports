@@ -24,18 +24,8 @@ stages:
     - echo "Running bin/console cache:pool:clear cache.app"
     - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console cache:pool:clear cache.app
 
-.pim_translation:
-  stage: cmd
-  before_script:
-    - echo "Running car import in $ENV_NAME env ($NAMESPACE namespace)!"
-    - export POD_NAME=$(kubectl -n ${NAMESPACE} get pod --selector app.kubernetes.io/name=x15-platform-api -o=name | head -1)
-    - echo "Detected pod name ${POD_NAME}!"
-  script:
-    - echo "Running bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION pim_translation full"
-    - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console app:configurator:import $REGION $COUNTRY_CODE $DISTRIBUTION pim_translation full
-
 dev-pim_translation:
-  extends: .pim_translation
+  extends: .import
   variables:
     NAMESPACE: dev
   rules:

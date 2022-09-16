@@ -24,6 +24,27 @@ stages:
     - echo "Running bin/console cache:pool:clear cache.app"
     - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console cache:pool:clear cache.app
 
+.pim_translation:
+  extends: .import
+  script:
+    - echo "Running bin/console c:c"
+    - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console c:c
+    - echo "Running bin/console app:configurator:import:multi pim_translation"
+    - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console app:configurator:import:multi pim_translation
+
+dev-pim_translation:
+  extends: .pim_translation
+  variables:
+    NAMESPACE: dev
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+      when: never
+    - if: $ENV_NAME != "dev"
+      when: never
+    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
+  tags:
+    - dev
+
 dev-import:
   extends: .import
   variables:

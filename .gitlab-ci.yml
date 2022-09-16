@@ -27,8 +27,6 @@ stages:
 .pim_translation:
   extends: .import
   script:
-    - echo "Running bin/console c:c"
-    - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console c:c
     - echo "Running bin/console app:configurator:import:multi pim_translation"
     - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console app:configurator:import:multi pim_translation
 

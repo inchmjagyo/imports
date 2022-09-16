@@ -25,7 +25,7 @@ stages:
     - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console cache:pool:clear cache.app
 
 .pim_translation:
-  extends: cmd
+  extends: .import
   script:
     - echo "Running bin/console app:configurator:import:pim_translation"
     - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console app:configurator:import:pim_translation

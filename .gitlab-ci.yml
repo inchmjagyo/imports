@@ -24,19 +24,6 @@ stages:
     - echo "Running bin/console cache:pool:clear cache.app"
     - kubectl -n ${NAMESPACE} exec ${POD_NAME} -- bin/console cache:pool:clear cache.app
 
-dev-pim_translation:
-  extends: .import
-  variables:
-    NAMESPACE: dev
-  rules:
-    - if: $CI_PIPELINE_SOURCE != "schedule"
-      when: never
-    - if: $ENV_NAME != "dev"
-      when: never
-    - if: $NAMESPACE && $REGION && $COUNTRY_CODE && $DISTRIBUTION && $IMPORT_COMMAND
-  tags:
-    - dev
-
 dev-import:
   extends: .import
   variables:

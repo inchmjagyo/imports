@@ -1,0 +1,127 @@
+name: Import Job
+
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        type: choice
+        default: dev
+        description: Select env
+        options:
+          - dev
+          - dev-hk
+          - sit
+          - uat
+          - preprod
+          - prod
+      country:
+        type: choice
+        default: all-countries
+        description: Select country
+        options:
+          - all-countries
+          - au
+          - au-au
+          - nz
+      brand:
+        type: choice
+        default: all-brands
+        description: Select brand
+        options:
+          - all-brands
+          - sub-dis
+      import-type:
+        type: choice
+        default: all-imports
+        description: Select import type
+        options:
+          - all-imports
+          - campaign-import
+          - car-import
+          - product-api
+          - stock-push
+          - translation-import
+
+run-name: Running on ${{ inputs.env }}-${{ inputs.country }}-${{ inputs.brand }}-${{ inputs.import-type }}
+
+jobs:
+
+  details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clear cache details
+        run: |
+          echo ${{ inputs.env }} ${{ inputs.country }} ${{ inputs.brand }} ${{ inputs.import-type }}
+
+# Subaru Australia
+  dev-au-sub-dis-campaign-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'au') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: au
+      COUNTRY: au
+      BRAND: sub-dis
+      IMPORT_COMMAND: pim_campaign full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  dev-au-sub-dis-car-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'au') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: au
+      COUNTRY: au
+      BRAND: sub-dis
+      IMPORT_COMMAND: pim full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  dev-au-sub-dis-product-api:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'au') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: au
+      COUNTRY: au
+      BRAND: sub-dis
+      IMPORT_COMMAND: product_api full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  dev-au-sub-dis-stock-push:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'au') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: au
+      COUNTRY: au
+      BRAND: sub-dis
+      IMPORT_COMMAND: stock_push full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"

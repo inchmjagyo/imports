@@ -43,6 +43,7 @@ on:
           - mini-dis
           - mot-dis
           - sub-dis
+          - subaru
           - szk-dis
       import-type:
         type: choice
@@ -68,13 +69,13 @@ jobs:
           echo ${{ inputs.env }} ${{ inputs.country }} ${{ inputs.brand }} ${{ inputs.import-type }}
 
 # Subaru Argentina
-  dev-ar-sub-dis-campaign-import:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+  dev-ar-subaru-campaign-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim_campaign full
       ENV: dev
       NAMESPACE: dev
@@ -86,13 +87,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  dev-ar-sub-dis-car-import:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+  dev-ar-subaru-car-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim full
       ENV: dev
       NAMESPACE: dev
@@ -104,13 +105,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  dev-ar-sub-dis-product-api:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+  dev-ar-subaru-product-api:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: product_api full
       ENV: dev
       NAMESPACE: dev
@@ -122,13 +123,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  dev-ar-sub-dis-stock-push:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+  dev-ar-subaru-stock-push:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: stock_push full
       ENV: dev
       NAMESPACE: dev
@@ -140,13 +141,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  dev-ar-sub-dis-translation-import:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+  dev-ar-subaru-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim_translation full
       ENV: dev
       NAMESPACE: dev
@@ -158,13 +159,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  sit-ar-sub-dis-campaign-import:
-      if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+  sit-ar-subaru-campaign-import:
+      if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
       uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: latam
         COUNTRY: ar
-        BRAND: sub-dis
+        BRAND: subaru
         IMPORT_COMMAND: pim_campaign full
         ENV: sit-hk
         NAMESPACE: sit
@@ -176,13 +177,13 @@ jobs:
         AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  sit-ar-sub-dis-car-import:
-    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+  sit-ar-subaru-car-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
     uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim full
       ENV: sit-hk
       NAMESPACE: sit
@@ -194,13 +195,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  sit-ar-sub-dis-product-api:
-    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+  sit-ar-subaru-product-api:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
     uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: product_api full
       ENV: sit-hk
       NAMESPACE: sit-hk
@@ -212,13 +213,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  sit-ar-sub-dis-stock-push:
-    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+  sit-ar-subaru-stock-push:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
     uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: stock_push full
       ENV: sit-hk
       NAMESPACE: sit
@@ -230,13 +231,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  sit-ar-sub-dis-translation-import:
-    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+  sit-ar-subaru-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim_translation full
       ENV: sit-hk
       NAMESPACE: sit
@@ -248,13 +249,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  uat-ar-sub-dis-campaign-import:
-      if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+  uat-ar-subaru-campaign-import:
+      if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
       uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: latam
         COUNTRY: ar
-        BRAND: sub-dis
+        BRAND: subaru
         IMPORT_COMMAND: pim_campaign full
         ENV: uat-hk
         NAMESPACE: uat
@@ -266,13 +267,13 @@ jobs:
         AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  uat-ar-sub-dis-car-import:
-    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+  uat-ar-subaru-car-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
     uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim full
       ENV: uat-hk
       NAMESPACE: uat
@@ -284,13 +285,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  uat-ar-sub-dis-product-api:
-    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+  uat-ar-subaru-product-api:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
     uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: product_api full
       ENV: uat-hk
       NAMESPACE: uat
@@ -302,13 +303,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  uat-ar-sub-dis-stock-push:
-    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+  uat-ar-subaru-stock-push:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
     uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: stock_push full
       ENV: uat-hk
       NAMESPACE: uat
@@ -320,13 +321,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  uat-ar-sub-dis-translation-import:
-    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+  uat-ar-subaru-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim_translation full
       ENV: uat-hk
       NAMESPACE: uat
@@ -338,13 +339,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  preprod-ar-sub-dis-campaign-import:
-      if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+  preprod-ar-subaru-campaign-import:
+      if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
       uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: latam
         COUNTRY: ar
-        BRAND: sub-dis
+        BRAND: subaru
         IMPORT_COMMAND: pim_campaign full
         ENV: brazil-pre-prod
         NAMESPACE: pre-prod
@@ -356,13 +357,13 @@ jobs:
         AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  preprod-ar-sub-dis-car-import:
-    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+  preprod-ar-subaru-car-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
       NAMESPACE: pre-prod
@@ -374,13 +375,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  preprod-ar-sub-dis-product-api:
-    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+  preprod-ar-subaru-product-api:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: product_api full
       ENV: brazil-pre-prod
       NAMESPACE: pre-prod
@@ -392,13 +393,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  preprod-ar-sub-dis-stock-push:
-    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+  preprod-ar-subaru-stock-push:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: stock_push full
       ENV: brazil-pre-prod
       NAMESPACE: pre-prod
@@ -410,13 +411,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  preprod-ar-sub-dis-translation-import:
-    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+  preprod-ar-subaru-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
       NAMESPACE: pre-prod
@@ -428,13 +429,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  prod-ar-sub-dis-campaign-import:
-      if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+  prod-ar-subaru-campaign-import:
+      if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
       uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: latam
         COUNTRY: ar
-        BRAND: sub-dis
+        BRAND: subaru
         IMPORT_COMMAND: pim_campaign full
         ENV: brazil-prod
         NAMESPACE: prod
@@ -446,13 +447,13 @@ jobs:
         AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  prod-ar-sub-dis-car-import:
-    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+  prod-ar-subaru-car-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim full
       ENV: brazil-prod
       NAMESPACE: prod
@@ -464,13 +465,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  prod-ar-sub-dis-product-api:
-    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+  prod-ar-subaru-product-api:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: product_api full
       ENV: brazil-prod
       NAMESPACE: prod
@@ -482,13 +483,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  prod-ar-sub-dis-stock-push:
-    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+  prod-ar-subaru-stock-push:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: stock_push full
       ENV: brazil-prod
       NAMESPACE: prod
@@ -500,13 +501,13 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  prod-ar-sub-dis-translation-import:
-    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+  prod-ar-subaru-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: latam
       COUNTRY: ar
-      BRAND: sub-dis
+      BRAND: subaru
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-prod
       NAMESPACE: prod

@@ -62,7 +62,7 @@ jobs:
 
 # Lexus Brunei
   dev-hk-bn-lex-dis-campaign-import:
-    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -80,7 +80,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   dev-hk-bn-lex-dis-car-import:
-    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -98,7 +98,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   dev-hk-bn-lex-dis-product-api:
-    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -116,7 +116,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   dev-hk-bn-lex-dis-stock-push:
-    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -134,7 +134,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   dev-hk-bn-lex-dis-translation-import:
-    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+    if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -152,7 +152,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   sit-hk-bn-lex-dis-campaign-import:
-      if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+      if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
       uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: au
@@ -170,7 +170,7 @@ jobs:
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   sit-hk-bn-lex-dis-car-import:
-    if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+    if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -188,7 +188,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   sit-hk-bn-lex-dis-product-api:
-    if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+    if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -206,7 +206,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   sit-hk-bn-lex-dis-stock-push:
-    if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+    if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -224,7 +224,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   sit-hk-bn-lex-dis-translation-import:
-    if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+    if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -242,7 +242,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   uat-hk-bn-lex-dis-campaign-import:
-      if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+      if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
       uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: au
@@ -260,7 +260,7 @@ jobs:
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   uat-hk-bn-lex-dis-car-import:
-    if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+    if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
     uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -278,7 +278,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   uat-hk-bn-lex-dis-product-api:
-    if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+    if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
     uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -296,7 +296,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   uat-hk-bn-lex-dis-stock-push:
-    if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+    if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
     uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -314,7 +314,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   uat-hk-bn-lex-dis-translation-import:
-    if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+    if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -332,7 +332,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   preprod-hk-bn-lex-dis-campaign-import:
-      if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+      if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
       uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: au
@@ -350,7 +350,7 @@ jobs:
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   preprod-hk-bn-lex-dis-car-import:
-    if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+    if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -368,7 +368,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   preprod-hk-bn-lex-dis-product-api:
-    if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+    if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -386,7 +386,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   preprod-hk-bn-lex-dis-stock-push:
-    if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+    if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -404,7 +404,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   preprod-hk-bn-lex-dis-translation-import:
-    if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+    if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -422,7 +422,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   prod-hk-bn-lex-dis-campaign-import:
-      if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
+      if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
       uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: au
@@ -440,7 +440,7 @@ jobs:
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   prod-hk-bn-lex-dis-car-import:
-    if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
+    if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -458,7 +458,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   prod-hk-bn-lex-dis-product-api:
-    if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
+    if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -476,7 +476,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   prod-hk-bn-lex-dis-stock-push:
-    if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
+    if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
@@ -494,7 +494,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   prod-hk-bn-lex-dis-translation-import:
-    if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'translation-import') }}
+    if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au

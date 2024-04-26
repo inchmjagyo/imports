@@ -596,7 +596,7 @@ jobs:
 
   sit-au-au-sub-dis-campaign-import:
       if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'au-au') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
-      uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+      uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: au
         COUNTRY: au-au
@@ -614,7 +614,7 @@ jobs:
 
   sit-au-au-sub-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'au-au') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
-    uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
       COUNTRY: au-au
@@ -632,7 +632,7 @@ jobs:
 
   sit-au-au-sub-dis-product-api:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'au-au') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
-    uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
       COUNTRY: au-au
@@ -650,7 +650,7 @@ jobs:
 
   sit-au-au-sub-dis-stock-push:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'au-au') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
-    uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
       COUNTRY: au-au
@@ -1047,7 +1047,7 @@ jobs:
 
   sit-nz-sub-dis-campaign-import:
       if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'nz') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'campaign-import') }}
-      uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+      uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
       with:
         REGION: au
         COUNTRY: nz
@@ -1065,7 +1065,7 @@ jobs:
 
   sit-nz-sub-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'nz') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'car-import') }}
-    uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
       COUNTRY: nz
@@ -1083,7 +1083,7 @@ jobs:
 
   sit-nz-sub-dis-product-api:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'nz') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'product-api') }}
-    uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
       COUNTRY: nz
@@ -1101,7 +1101,7 @@ jobs:
 
   sit-nz-sub-dis-stock-push:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'nz') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.app == 'stock-push') }}
-    uses: inchcape-global-sitsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: au
       COUNTRY: nz

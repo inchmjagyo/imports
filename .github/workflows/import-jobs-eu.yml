@@ -57,15 +57,925 @@ jobs:
         run: |
           echo ${{ inputs.env }} ${{ inputs.country }} ${{ inputs.brand }} ${{ inputs.import-type }}
 
+# Jaguar Lithuania
+  dev-lt-jag-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-lt-jag-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-lt-jag-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-lt-jag-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-lt-jag-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Jaguar Estonia
+  dev-ee-jag-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-ee-jag-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-ee-jag-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-ee-jag-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-ee-jag-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Jaguar Latvia
+  dev-lv-jag-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-lv-jag-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-lv-jag-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-lv-jag-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-lv-jag-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Jaguar Finland
+  dev-fi-jag-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-fi-jag-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-fi-jag-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-fi-jag-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-fi-jag-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Jaguar Poland
+  dev-pl-jag-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-pl-jag-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-pl-jag-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-pl-jag-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-pl-jag-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'jag-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: jag-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Land Rover Lithuania
+  dev-lt-lre-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-lt-lre-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-lt-lre-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-lt-lre-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-lt-lre-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'lt') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lt
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Land Rover Poland
+  dev-pl-lre-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-pl-lre-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-pl-lre-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-pl-lre-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-pl-lre-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pl') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: pl
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Land Rover Finland
+  dev-fi-lre-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-fi-lre-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-fi-lre-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-fi-lre-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-fi-lre-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'fi') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: fi
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Land Rover Estonia
+  dev-ee-lre-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-ee-lre-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-ee-lre-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-ee-lre-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-ee-lre-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ee') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: ee
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+# Land Rover Latvia
+  dev-lv-lre-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: dev
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  sit-lv-lre-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: sit
+      NAMESPACE: sit
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  uat-lv-lre-dis-translation-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  preprod-lv-lre-dis-translation-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-lv-lre-dis-translation-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'lv') && (inputs.brand == 'all-brands' || inputs.brand == 'lre-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: lv
+      BRAND: lre-dis
+      IMPORT_COMMAND: pim_translation full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
 # BYD Belgium
-  dev-be-byd-dis-campaign-import:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
+  dev-be-byd-dis-translation-import:
+    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: eu
       COUNTRY: be
       BRAND: byd-dis
-      IMPORT_COMMAND: pim_campaign full
+      IMPORT_COMMAND: pim_translation full
       ENV: dev
       NAMESPACE: dev
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
@@ -94,52 +1004,16 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  dev-be-byd-dis-product-api:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: product_api full
-      ENV: dev
-      NAMESPACE: dev
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  dev-be-byd-dis-stock-push:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: stock_push full
-      ENV: dev
-      NAMESPACE: dev
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  dev-be-byd-dis-translation-import:
-    if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
+  sit-be-byd-dis-translation-import:
+    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: eu
       COUNTRY: be
       BRAND: byd-dis
       IMPORT_COMMAND: pim_translation full
-      ENV: dev
-      NAMESPACE: dev
+      ENV: sit
+      NAMESPACE: sit
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
       CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
@@ -147,24 +1021,6 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  sit-be-byd-dis-campaign-import:
-      if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-      uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-      with:
-        REGION: eu
-        COUNTRY: be
-        BRAND: byd-dis
-        IMPORT_COMMAND: pim_campaign full
-        ENV: sit-hk
-        NAMESPACE: sit
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-        CLUSTER: ${{ vars.CLUSTER_DEV }}
-      secrets: 
-        AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-        AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-        AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-        AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
   sit-be-byd-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -174,134 +1030,8 @@ jobs:
       COUNTRY: be
       BRAND: byd-dis
       IMPORT_COMMAND: pim full
-      ENV: sit-hk
+      ENV: sit
       NAMESPACE: sit
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  sit-be-byd-dis-product-api:
-    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: product_api full
-      ENV: sit-hk
-      NAMESPACE: sit-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  sit-be-byd-dis-stock-push:
-    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: stock_push full
-      ENV: sit-hk
-      NAMESPACE: sit
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  sit-be-byd-dis-translation-import:
-    if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: pim_translation full
-      ENV: sit-hk
-      NAMESPACE: sit
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  uat-be-byd-dis-campaign-import:
-      if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-      uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-      with:
-        REGION: eu
-        COUNTRY: be
-        BRAND: byd-dis
-        IMPORT_COMMAND: pim_campaign full
-        ENV: uat-hk
-        NAMESPACE: uat
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-        CLUSTER: ${{ vars.CLUSTER_DEV }}
-      secrets: 
-        AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-        AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-        AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-        AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  uat-be-byd-dis-car-import:
-    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: pim full
-      ENV: uat-hk
-      NAMESPACE: uat
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  uat-be-byd-dis-product-api:
-    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: product_api full
-      ENV: uat-hk
-      NAMESPACE: uat
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  uat-be-byd-dis-stock-push:
-    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: stock_push full
-      ENV: uat-hk
-      NAMESPACE: uat
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
       CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
@@ -318,7 +1048,7 @@ jobs:
       COUNTRY: be
       BRAND: byd-dis
       IMPORT_COMMAND: pim_translation full
-      ENV: uat-hk
+      ENV: uat
       NAMESPACE: uat
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
       CLUSTER: ${{ vars.CLUSTER_DEV }}
@@ -328,72 +1058,18 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  preprod-be-byd-dis-campaign-import:
-      if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-      uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-      with:
-        REGION: eu
-        COUNTRY: be
-        BRAND: byd-dis
-        IMPORT_COMMAND: pim_campaign full
-        ENV: europe-pre-prod
-        NAMESPACE: pre-prod
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-        CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
-      secrets: 
-        AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-        AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-        AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-        AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  preprod-be-byd-dis-car-import:
-    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+  uat-be-byd-dis-car-import:
+    if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
+    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: eu
       COUNTRY: be
       BRAND: byd-dis
       IMPORT_COMMAND: pim full
-      ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  preprod-be-byd-dis-product-api:
-    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: product_api full
-      ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  preprod-be-byd-dis-stock-push:
-    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: stock_push full
-      ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      ENV: uat
+      NAMESPACE: uat
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -418,70 +1094,16 @@ jobs:
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
 
-  prod-be-byd-dis-campaign-import:
-      if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-      uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-      with:
-        REGION: eu
-        COUNTRY: be
-        BRAND: byd-dis
-        IMPORT_COMMAND: pim_campaign full
-        ENV: europe-prod
-        NAMESPACE: prod
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-        CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
-      secrets: 
-        AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-        AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-        AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-        AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  prod-be-byd-dis-car-import:
-    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
+  preprod-be-byd-dis-car-import:
+    if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
     uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
     with:
       REGION: eu
       COUNTRY: be
       BRAND: byd-dis
       IMPORT_COMMAND: pim full
-      ENV: europe-prod
-      NAMESPACE: prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  prod-be-byd-dis-product-api:
-    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: product_api full
-      ENV: europe-prod
-      NAMESPACE: prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
-    secrets: 
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-
-  prod-be-byd-dis-stock-push:
-    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
-    with:
-      REGION: eu
-      COUNTRY: be
-      BRAND: byd-dis
-      IMPORT_COMMAND: stock_push full
-      ENV: europe-prod
-      NAMESPACE: prod
+      ENV: europe-pre-prod
+      NAMESPACE: pre-prod
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
       CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
     secrets: 
@@ -507,3 +1129,21 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+
+  prod-be-byd-dis-car-import:
+    if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'be') && (inputs.brand == 'all-brands' || inputs.brand == 'byd-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
+    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    with:
+      REGION: eu
+      COUNTRY: be
+      BRAND: byd-dis
+      IMPORT_COMMAND: pim full
+      ENV: europe-prod
+      NAMESPACE: prod
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"            

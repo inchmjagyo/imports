@@ -71,7 +71,7 @@ jobs:
 # Subaru Argentina
   dev-ar-subaru-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -89,7 +89,7 @@ jobs:
 
   dev-ar-subaru-product-api:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -107,7 +107,7 @@ jobs:
 
   dev-ar-subaru-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -125,7 +125,7 @@ jobs:
 
   sit-ar-subaru-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -143,7 +143,7 @@ jobs:
 
   sit-ar-subaru-product-api:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -161,7 +161,7 @@ jobs:
 
   sit-ar-subaru-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -215,7 +215,7 @@ jobs:
 
   uat-ar-subaru-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -233,7 +233,7 @@ jobs:
 
   preprod-ar-subaru-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -251,7 +251,7 @@ jobs:
 
   preprod-ar-subaru-product-api:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -269,7 +269,7 @@ jobs:
 
   preprod-ar-subaru-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -287,7 +287,7 @@ jobs:
 
   prod-ar-subaru-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -305,7 +305,7 @@ jobs:
 
   prod-ar-subaru-product-api:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -323,7 +323,7 @@ jobs:
 
   prod-ar-subaru-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ar') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ar
@@ -342,7 +342,7 @@ jobs:
 # Subaru Peru
   dev-pe-subaru-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -360,7 +360,7 @@ jobs:
 
   dev-pe-subaru-product-api:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -378,7 +378,7 @@ jobs:
 
   dev-pe-subaru-stock-push:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -396,7 +396,7 @@ jobs:
 
   dev-pe-subaru-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -414,7 +414,7 @@ jobs:
 
   sit-pe-subaru-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -432,7 +432,7 @@ jobs:
 
   sit-pe-subaru-product-api:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -450,7 +450,7 @@ jobs:
 
   sit-pe-subaru-stock-push:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -468,7 +468,7 @@ jobs:
 
   sit-pe-subaru-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -540,7 +540,7 @@ jobs:
 
   uat-pe-subaru-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -558,7 +558,7 @@ jobs:
 
   preprod-pe-subaru-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -576,7 +576,7 @@ jobs:
   
   preprod-pe-subaru-product-api:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -594,7 +594,7 @@ jobs:
 
   preprod-pe-subaru-stock-push:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -612,7 +612,7 @@ jobs:
 
   preprod-pe-subaru-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -630,7 +630,7 @@ jobs:
 
   prod-pe-subaru-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -648,7 +648,7 @@ jobs:
   
   prod-pe-subaru-product-api:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -666,7 +666,7 @@ jobs:
 
   prod-pe-subaru-stock-push:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -684,7 +684,7 @@ jobs:
 
   prod-pe-subaru-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -703,7 +703,7 @@ jobs:
 # Subaru Colombia
   dev-co-subaru-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -721,7 +721,7 @@ jobs:
   
   dev-co-subaru-product-api:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -739,7 +739,7 @@ jobs:
 
   dev-co-subaru-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -757,7 +757,7 @@ jobs:
 
   sit-co-subaru-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -775,7 +775,7 @@ jobs:
   
   sit-co-subaru-product-api:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -793,7 +793,7 @@ jobs:
 
   sit-co-subaru-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -847,7 +847,7 @@ jobs:
 
   uat-co-subaru-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -865,7 +865,7 @@ jobs:
 
   preprod-co-subaru-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -883,7 +883,7 @@ jobs:
   
   preprod-co-subaru-product-api:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -901,7 +901,7 @@ jobs:
 
   preprod-co-subaru-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -919,7 +919,7 @@ jobs:
 
   prod-co-subaru-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -937,7 +937,7 @@ jobs:
   
   prod-co-subaru-product-api:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -955,7 +955,7 @@ jobs:
 
   prod-co-subaru-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'subaru') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -974,7 +974,7 @@ jobs:
 # Subaru Chile
   dev-cl-sub-dis-campaign-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -992,7 +992,7 @@ jobs:
 
   dev-cl-sub-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1010,7 +1010,7 @@ jobs:
 
   dev-cl-sub-dis-product-api:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1028,7 +1028,7 @@ jobs:
 
   dev-cl-sub-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1046,7 +1046,7 @@ jobs:
 
   sit-cl-sub-dis-campaign-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1064,7 +1064,7 @@ jobs:
 
   sit-cl-sub-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1082,7 +1082,7 @@ jobs:
 
   sit-cl-sub-dis-product-api:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1100,7 +1100,7 @@ jobs:
 
   sit-cl-sub-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1172,7 +1172,7 @@ jobs:
 
   uat-cl-sub-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1190,7 +1190,7 @@ jobs:
 
   preprod-cl-sub-dis-campaign-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1208,7 +1208,7 @@ jobs:
 
   preprod-cl-sub-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1226,7 +1226,7 @@ jobs:
 
   preprod-cl-sub-dis-product-api:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1244,7 +1244,7 @@ jobs:
 
   preprod-cl-sub-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1262,7 +1262,7 @@ jobs:
 
   prod-cl-sub-dis-campaign-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1280,7 +1280,7 @@ jobs:
 
   prod-cl-sub-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1298,7 +1298,7 @@ jobs:
 
   prod-cl-sub-dis-product-api:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'product-api') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1316,7 +1316,7 @@ jobs:
 
   prod-cl-sub-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'sub-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1335,7 +1335,7 @@ jobs:
 # DFSK Peru
   dev-pe-dfs-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1353,7 +1353,7 @@ jobs:
 
   dev-pe-dfs-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1371,7 +1371,7 @@ jobs:
 
   sit-pe-dfs-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1389,7 +1389,7 @@ jobs:
 
   sit-pe-dfs-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1425,7 +1425,7 @@ jobs:
 
   uat-pe-dfs-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1443,7 +1443,7 @@ jobs:
 
   preprod-pe-dfs-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1461,7 +1461,7 @@ jobs:
 
   preprod-pe-dfs-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1479,7 +1479,7 @@ jobs:
 
   prod-pe-dfs-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1497,7 +1497,7 @@ jobs:
 
   prod-pe-dfs-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -1516,7 +1516,7 @@ jobs:
 # DFSK Chile
   dev-cl-dfs-dis-campaign-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1534,7 +1534,7 @@ jobs:
 
   dev-cl-dfs-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1552,7 +1552,7 @@ jobs:
 
   dev-cl-dfs-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1570,7 +1570,7 @@ jobs:
 
   sit-cl-dfs-dis-campaign-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1588,7 +1588,7 @@ jobs:
 
   sit-cl-dfs-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1606,7 +1606,7 @@ jobs:
 
   sit-cl-dfs-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1660,7 +1660,7 @@ jobs:
 
   uat-cl-dfs-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1678,7 +1678,7 @@ jobs:
 
   preprod-cl-dfs-dis-campaign-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1696,7 +1696,7 @@ jobs:
 
   preprod-cl-dfs-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1714,7 +1714,7 @@ jobs:
 
   preprod-cl-dfs-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1732,7 +1732,7 @@ jobs:
 
   prod-cl-dfs-dis-campaign-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1750,7 +1750,7 @@ jobs:
 
   prod-cl-dfs-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1768,7 +1768,7 @@ jobs:
 
   prod-cl-dfs-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'dfs-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1787,7 +1787,7 @@ jobs:
 # Geely Chile
   dev-cl-gly-dis-campaign-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1805,7 +1805,7 @@ jobs:
 
   dev-cl-gly-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1823,7 +1823,7 @@ jobs:
 
   dev-cl-gly-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1841,7 +1841,7 @@ jobs:
 
   sit-cl-gly-dis-campaign-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1859,7 +1859,7 @@ jobs:
 
   sit-cl-gly-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1877,7 +1877,7 @@ jobs:
 
   sit-cl-gly-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1931,7 +1931,7 @@ jobs:
 
   uat-cl-gly-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1949,7 +1949,7 @@ jobs:
 
   preprod-cl-gly-dis-campaign-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1967,7 +1967,7 @@ jobs:
 
   preprod-cl-gly-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -1985,7 +1985,7 @@ jobs:
 
   preprod-cl-gly-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2003,7 +2003,7 @@ jobs:
 
   prod-cl-gly-dis-campaign-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2021,7 +2021,7 @@ jobs:
 
   prod-cl-gly-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2039,7 +2039,7 @@ jobs:
 
   prod-cl-gly-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gly-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2058,7 +2058,7 @@ jobs:
 # Mini Chile
   dev-cl-mini-dis-campaign-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2076,7 +2076,7 @@ jobs:
 
   dev-cl-mini-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2094,7 +2094,7 @@ jobs:
 
   dev-cl-mini-dis-stock-push:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2112,7 +2112,7 @@ jobs:
 
   dev-cl-mini-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2130,7 +2130,7 @@ jobs:
 
   sit-cl-mini-dis-campaign-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2148,7 +2148,7 @@ jobs:
 
   sit-cl-mini-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2166,7 +2166,7 @@ jobs:
 
   sit-cl-mini-dis-stock-push:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2184,7 +2184,7 @@ jobs:
 
   sit-cl-mini-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2256,7 +2256,7 @@ jobs:
 
   uat-cl-mini-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2274,7 +2274,7 @@ jobs:
 
   preprod-cl-mini-dis-campaign-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2292,7 +2292,7 @@ jobs:
 
   preprod-cl-mini-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2310,7 +2310,7 @@ jobs:
 
   preprod-cl-mini-dis-stock-push:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2328,7 +2328,7 @@ jobs:
 
   preprod-cl-mini-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2346,7 +2346,7 @@ jobs:
 
   prod-cl-mini-dis-campaign-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2364,7 +2364,7 @@ jobs:
 
   prod-cl-mini-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2382,7 +2382,7 @@ jobs:
 
   prod-cl-mini-dis-stock-push:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2400,7 +2400,7 @@ jobs:
 
   prod-cl-mini-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2419,7 +2419,7 @@ jobs:
 # Mini Peru
   dev-pe-mini-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2437,7 +2437,7 @@ jobs:
 
   dev-pe-mini-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2455,7 +2455,7 @@ jobs:
 
   sit-pe-mini-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2473,7 +2473,7 @@ jobs:
 
   sit-pe-mini-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2509,7 +2509,7 @@ jobs:
 
   uat-pe-mini-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2527,7 +2527,7 @@ jobs:
 
   preprod-pe-mini-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2545,7 +2545,7 @@ jobs:
 
   preprod-pe-mini-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2563,7 +2563,7 @@ jobs:
 
   prod-pe-mini-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2581,7 +2581,7 @@ jobs:
 
   prod-pe-mini-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mini-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2600,7 +2600,7 @@ jobs:
 # Motorrad Chile
   dev-cl-mot-dis-campaign-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2618,7 +2618,7 @@ jobs:
 
   dev-cl-mot-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2636,7 +2636,7 @@ jobs:
 
   dev-cl-mot-dis-stock-push:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2654,7 +2654,7 @@ jobs:
 
   dev-cl-mot-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2672,7 +2672,7 @@ jobs:
 
   sit-cl-mot-dis-campaign-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2690,7 +2690,7 @@ jobs:
 
   sit-cl-mot-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2708,7 +2708,7 @@ jobs:
 
   sit-cl-mot-dis-stock-push:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2726,7 +2726,7 @@ jobs:
 
   sit-cl-mot-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2798,7 +2798,7 @@ jobs:
 
   uat-cl-mot-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2816,7 +2816,7 @@ jobs:
 
   preprod-cl-mot-dis-campaign-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2834,7 +2834,7 @@ jobs:
 
   preprod-cl-mot-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2852,7 +2852,7 @@ jobs:
 
   preprod-cl-mot-dis-stock-push:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2870,7 +2870,7 @@ jobs:
 
   preprod-cl-mot-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2888,7 +2888,7 @@ jobs:
 
   prod-cl-mot-dis-campaign-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2906,7 +2906,7 @@ jobs:
 
   prod-cl-mot-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2924,7 +2924,7 @@ jobs:
 
   prod-cl-mot-dis-stock-push:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2942,7 +2942,7 @@ jobs:
 
   prod-cl-mot-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -2961,7 +2961,7 @@ jobs:
 # Motorrad Peru
   dev-pe-mot-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2979,7 +2979,7 @@ jobs:
 
   dev-pe-mot-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -2997,7 +2997,7 @@ jobs:
 
   sit-pe-mot-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3015,7 +3015,7 @@ jobs:
 
   sit-pe-mot-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3051,7 +3051,7 @@ jobs:
 
   uat-pe-mot-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3069,7 +3069,7 @@ jobs:
 
   preprod-pe-mot-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3087,7 +3087,7 @@ jobs:
 
   preprod-pe-mot-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3105,7 +3105,7 @@ jobs:
 
   prod-pe-mot-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3123,7 +3123,7 @@ jobs:
 
   prod-pe-mot-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'mot-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3142,7 +3142,7 @@ jobs:
 # BMW Chile
   dev-cl-bmw-dis-campaign-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3160,7 +3160,7 @@ jobs:
 
   dev-cl-bmw-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3178,7 +3178,7 @@ jobs:
 
   dev-cl-bmw-dis-stock-push:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3196,7 +3196,7 @@ jobs:
 
   dev-cl-bmw-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3214,7 +3214,7 @@ jobs:
 
   sit-cl-bmw-dis-campaign-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3232,7 +3232,7 @@ jobs:
 
   sit-cl-bmw-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3250,7 +3250,7 @@ jobs:
 
   sit-cl-bmw-dis-stock-push:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3268,7 +3268,7 @@ jobs:
 
   sit-cl-bmw-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3340,7 +3340,7 @@ jobs:
 
   uat-cl-bmw-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3358,7 +3358,7 @@ jobs:
 
   preprod-cl-bmw-dis-campaign-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3376,7 +3376,7 @@ jobs:
 
   preprod-cl-bmw-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3394,7 +3394,7 @@ jobs:
 
   preprod-cl-bmw-dis-stock-push:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3412,7 +3412,7 @@ jobs:
 
   preprod-cl-bmw-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3430,7 +3430,7 @@ jobs:
 
   prod-cl-bmw-dis-campaign-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3448,7 +3448,7 @@ jobs:
 
   prod-cl-bmw-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3466,7 +3466,7 @@ jobs:
 
   prod-cl-bmw-dis-stock-push:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3484,7 +3484,7 @@ jobs:
 
   prod-cl-bmw-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -3503,7 +3503,7 @@ jobs:
 # BMW Peru
   dev-pe-bmw-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3521,7 +3521,7 @@ jobs:
 
   dev-pe-bmw-dis-stock-push:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3539,7 +3539,7 @@ jobs:
 
   dev-pe-bmw-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3557,7 +3557,7 @@ jobs:
 
   sit-pe-bmw-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3575,7 +3575,7 @@ jobs:
 
   sit-pe-bmw-dis-stock-push:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3593,7 +3593,7 @@ jobs:
 
   sit-pe-bmw-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3647,7 +3647,7 @@ jobs:
 
   uat-pe-bmw-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3665,7 +3665,7 @@ jobs:
 
   preprod-pe-bmw-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3683,7 +3683,7 @@ jobs:
 
   preprod-pe-bmw-dis-stock-push:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3701,7 +3701,7 @@ jobs:
 
   preprod-pe-bmw-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3719,7 +3719,7 @@ jobs:
 
   prod-pe-bmw-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3737,7 +3737,7 @@ jobs:
 
   prod-pe-bmw-dis-stock-push:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3755,7 +3755,7 @@ jobs:
 
   prod-pe-bmw-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pe') && (inputs.brand == 'all-brands' || inputs.brand == 'bmw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pe
@@ -3774,7 +3774,7 @@ jobs:
 # Mercedes-Benz Ecuador (Passenger)
   dev-ec-mer-pas-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3792,7 +3792,7 @@ jobs:
 
   dev-ec-mer-pas-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3810,7 +3810,7 @@ jobs:
 
   sit-ec-mer-pas-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3828,7 +3828,7 @@ jobs:
 
   sit-ec-mer-pas-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3864,7 +3864,7 @@ jobs:
 
   uat-ec-mer-pas-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3882,7 +3882,7 @@ jobs:
 
   preprod-ec-mer-pas-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3900,7 +3900,7 @@ jobs:
 
   preprod-ec-mer-pas-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3918,7 +3918,7 @@ jobs:
 
   prod-ec-mer-pas-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3936,7 +3936,7 @@ jobs:
 
   prod-ec-mer-pas-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -3955,7 +3955,7 @@ jobs:
 # Mercedes-Benz Colombia
   dev-co-mer-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -3973,7 +3973,7 @@ jobs:
 
   dev-co-mer-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -3991,7 +3991,7 @@ jobs:
 
   sit-co-mer-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4009,7 +4009,7 @@ jobs:
 
   sit-co-mer-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4045,7 +4045,7 @@ jobs:
 
   uat-co-mer-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4063,7 +4063,7 @@ jobs:
 
   preprod-co-mer-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4081,7 +4081,7 @@ jobs:
 
   preprod-co-mer-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4099,7 +4099,7 @@ jobs:
 
   prod-co-mer-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4117,7 +4117,7 @@ jobs:
 
   prod-co-mer-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4136,7 +4136,7 @@ jobs:
 # Mercedes-Benz Ecuador (Commercial)
   dev-ec-mer-com-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-com') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -4154,7 +4154,7 @@ jobs:
 
   sit-ec-mer-com-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-com') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -4190,7 +4190,7 @@ jobs:
 
   preprod-ec-mer-com-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-com') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -4208,7 +4208,7 @@ jobs:
 
   prod-ec-mer-com-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'ec') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-com') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: ec
@@ -4227,7 +4227,7 @@ jobs:
 # Great Wall Chile
   dev-cl-gwm-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4245,7 +4245,7 @@ jobs:
 
   dev-cl-gwm-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4263,7 +4263,7 @@ jobs:
 
   sit-cl-gwm-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4281,7 +4281,7 @@ jobs:
 
   sit-cl-gwm-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4317,7 +4317,7 @@ jobs:
 
   uat-cl-gwm-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4335,7 +4335,7 @@ jobs:
 
   preprod-cl-gwm-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4353,7 +4353,7 @@ jobs:
 
   preprod-cl-gwm-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4371,7 +4371,7 @@ jobs:
 
   prod-cl-gwm-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4389,7 +4389,7 @@ jobs:
 
   prod-cl-gwm-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cl') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cl
@@ -4408,7 +4408,7 @@ jobs:
 # Hino Colombia
   dev-co-hin-dis-campaign-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4426,7 +4426,7 @@ jobs:
 
   dev-co-hin-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4444,7 +4444,7 @@ jobs:
 
   dev-co-hin-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4462,7 +4462,7 @@ jobs:
 
   sit-co-hin-dis-campaign-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4480,7 +4480,7 @@ jobs:
 
   sit-co-hin-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4498,7 +4498,7 @@ jobs:
 
   sit-co-hin-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4552,7 +4552,7 @@ jobs:
 
   uat-co-hin-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4570,7 +4570,7 @@ jobs:
 
   preprod-co-hin-dis-campaign-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4588,7 +4588,7 @@ jobs:
 
   preprod-co-hin-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4606,7 +4606,7 @@ jobs:
 
   preprod-co-hin-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4624,7 +4624,7 @@ jobs:
 
   prod-co-hin-dis-campaign-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4642,7 +4642,7 @@ jobs:
 
   prod-co-hin-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4660,7 +4660,7 @@ jobs:
 
   prod-co-hin-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'co') && (inputs.brand == 'all-brands' || inputs.brand == 'hin-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: co
@@ -4679,7 +4679,7 @@ jobs:
 # Suzuki Panama
   dev-pa-szk-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4697,7 +4697,7 @@ jobs:
 
   dev-pa-szk-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4715,7 +4715,7 @@ jobs:
 
   sit-pa-szk-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4733,7 +4733,7 @@ jobs:
 
   sit-pa-szk-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4769,7 +4769,7 @@ jobs:
 
   uat-pa-szk-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4787,7 +4787,7 @@ jobs:
 
   preprod-pa-szk-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4805,7 +4805,7 @@ jobs:
 
   preprod-pa-szk-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4823,7 +4823,7 @@ jobs:
 
   prod-pa-szk-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4841,7 +4841,7 @@ jobs:
 
   prod-pa-szk-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'pa') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: pa
@@ -4860,7 +4860,7 @@ jobs:
 # Suzuki Costa Rica
   dev-cr-szk-dis-car-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr
@@ -4878,7 +4878,7 @@ jobs:
 
   dev-cr-szk-dis-translation-import:
     if: ${{ inputs.env == 'dev' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr
@@ -4896,7 +4896,7 @@ jobs:
 
   sit-cr-szk-dis-car-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr
@@ -4914,7 +4914,7 @@ jobs:
 
   sit-cr-szk-dis-translation-import:
     if: ${{ inputs.env == 'sit' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr
@@ -4950,7 +4950,7 @@ jobs:
 
   uat-cr-szk-dis-translation-import:
     if: ${{ inputs.env == 'uat' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr
@@ -4968,7 +4968,7 @@ jobs:
 
   preprod-cr-szk-dis-car-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr
@@ -4986,7 +4986,7 @@ jobs:
 
   preprod-cr-szk-dis-translation-import:
     if: ${{ inputs.env == 'preprod' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr
@@ -5004,7 +5004,7 @@ jobs:
 
   prod-cr-szk-dis-car-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr
@@ -5022,7 +5022,7 @@ jobs:
 
   prod-cr-szk-dis-translation-import:
     if: ${{ inputs.env == 'prod' && (inputs.country == 'all-countries' || inputs.country == 'cr') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
-    uses: inchcape-global-devsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: latam
       COUNTRY: cr

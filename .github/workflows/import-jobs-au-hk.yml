@@ -135,7 +135,7 @@ jobs:
 
   uat-hk-hk-lex-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: hk
@@ -316,7 +316,7 @@ jobs:
 
   uat-hk-sg-lex-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: sg
@@ -497,7 +497,7 @@ jobs:
 
   uat-hk-bn-lex-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: bn
@@ -714,7 +714,7 @@ jobs:
 
   uat-hk-hk-grw-dis-stock-push:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: hk
@@ -732,7 +732,7 @@ jobs:
   
   uat-hk-hk-grw-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: hk
@@ -985,7 +985,7 @@ jobs:
 
   uat-hk-hk-toy-dis-stock-push:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: hk
@@ -1003,7 +1003,7 @@ jobs:
   
   uat-hk-hk-toy-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: hk
@@ -1292,7 +1292,7 @@ jobs:
 
   uat-hk-sg-toy-dis-stock-push:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: sg
@@ -1310,7 +1310,7 @@ jobs:
   
   uat-hk-sg-toy-dis-campaign-import:
       if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
-      uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
       with:
         REGION: au
         COUNTRY: sg
@@ -1328,7 +1328,7 @@ jobs:
   
   uat-hk-sg-toy-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: sg
@@ -1581,7 +1581,7 @@ jobs:
 
   uat-hk-bn-toy-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: bn
@@ -1762,7 +1762,7 @@ jobs:
 
   uat-hk-ph-mer-pas-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: ph
@@ -1943,7 +1943,7 @@ jobs:
 
   uat-hk-id-mer-pas-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: id
@@ -2124,7 +2124,7 @@ jobs:
 
   uat-hk-sg-szk-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: sg
@@ -2305,7 +2305,7 @@ jobs:
 
   uat-hk-ph-cha-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: ph
@@ -2486,7 +2486,7 @@ jobs:
 
   uat-hk-id-gwm-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
-    uses: inchcape-global-uatsecops/generic-templates/.github/workflows/import-jobs.yaml@add-x15-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
     with:
       REGION: au
       COUNTRY: id

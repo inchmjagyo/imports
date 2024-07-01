@@ -54,7 +54,8 @@ run-name: Running on ${{ inputs.env }}-${{ inputs.country }}-${{ inputs.brand }}
 jobs:
 
   details:
-    runs-on: ubuntu-latest
+    runs-on:
+      group: gha-runner-dxp
     steps:
       - name: Import job details
         run: |

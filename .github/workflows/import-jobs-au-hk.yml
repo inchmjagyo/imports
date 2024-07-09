@@ -79,6 +79,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-hk-lex-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -97,6 +98,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-hk-lex-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -115,6 +117,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-hk-lex-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -133,6 +136,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-hk-lex-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -151,6 +155,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-hk-lex-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -169,6 +174,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-hk-lex-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -187,6 +193,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-hk-lex-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -205,6 +212,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-hk-lex-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -223,6 +231,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-hk-lex-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -241,6 +250,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Lexus Singapore
   dev-hk-sg-lex-dis-car-import:
@@ -260,6 +270,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-sg-lex-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -278,6 +289,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-sg-lex-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -296,6 +308,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-sg-lex-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -314,6 +327,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-sg-lex-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -332,6 +346,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-sg-lex-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -350,6 +365,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-sg-lex-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -368,6 +384,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-sg-lex-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -386,6 +403,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-sg-lex-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -404,6 +422,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-sg-lex-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -422,6 +441,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Lexus Brunei
   dev-hk-bn-lex-dis-car-import:
@@ -441,6 +461,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-bn-lex-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -459,6 +480,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-bn-lex-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -477,6 +499,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-bn-lex-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -495,6 +518,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-bn-lex-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -513,6 +537,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-bn-lex-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -531,6 +556,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-bn-lex-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -549,6 +575,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-bn-lex-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -567,6 +594,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-bn-lex-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -585,6 +613,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-bn-lex-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'lex-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -603,6 +632,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Great Wall Hong Kong
   dev-hk-hk-grw-dis-stock-push:
@@ -622,6 +652,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-hk-grw-dis-car-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -640,6 +671,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-hk-grw-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -658,6 +690,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-hk-grw-dis-stock-push:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -676,6 +709,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   sit-hk-hk-grw-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -694,6 +728,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-hk-grw-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -712,6 +747,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-hk-grw-dis-stock-push:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -730,6 +766,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   uat-hk-hk-grw-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -748,6 +785,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-hk-grw-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -766,6 +804,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-hk-grw-dis-stock-push:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -784,6 +823,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   preprod-hk-hk-grw-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -802,6 +842,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-hk-grw-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -820,6 +861,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-hk-grw-dis-stock-push:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -838,6 +880,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-hk-grw-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -856,6 +899,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-hk-grw-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'grw-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -874,6 +918,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Toyota Hong Kong
   dev-hk-hk-toy-dis-stock-push:
@@ -893,6 +938,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-hk-toy-dis-car-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -911,6 +957,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-hk-toy-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -929,6 +976,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-hk-toy-dis-stock-push:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -947,6 +995,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   sit-hk-hk-toy-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -965,6 +1014,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-hk-toy-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -983,6 +1033,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-hk-toy-dis-stock-push:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -1001,6 +1052,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   uat-hk-hk-toy-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1019,6 +1071,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-hk-toy-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1037,6 +1090,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-hk-toy-dis-stock-push:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -1055,6 +1109,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   preprod-hk-hk-toy-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1073,6 +1128,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-hk-toy-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1091,6 +1147,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-hk-toy-dis-stock-push:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -1109,6 +1166,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-hk-toy-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1127,6 +1185,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-hk-toy-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'hk') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1145,6 +1204,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Toyota Singapore
   dev-hk-sg-toy-dis-stock-push:
@@ -1164,6 +1224,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-sg-toy-dis-campaign-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
@@ -1182,6 +1243,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-sg-toy-dis-car-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1200,6 +1262,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-sg-toy-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1218,6 +1281,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-sg-toy-dis-stock-push:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -1236,6 +1300,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   sit-hk-sg-toy-dis-campaign-import:
       if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
@@ -1254,6 +1319,7 @@ jobs:
         AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
         AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+        AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   sit-hk-sg-toy-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1272,6 +1338,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-sg-toy-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1290,6 +1357,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-sg-toy-dis-stock-push:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -1308,6 +1376,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   uat-hk-sg-toy-dis-campaign-import:
       if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
@@ -1326,6 +1395,7 @@ jobs:
         AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
         AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+        AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   uat-hk-sg-toy-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1344,6 +1414,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-sg-toy-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1362,6 +1433,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-sg-toy-dis-stock-push:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -1380,6 +1452,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   preprod-hk-sg-toy-dis-campaign-import:
       if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
@@ -1398,6 +1471,7 @@ jobs:
         AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
         AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+        AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
   
   preprod-hk-sg-toy-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1416,6 +1490,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-sg-toy-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1434,6 +1509,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-sg-toy-dis-stock-push:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'stock-push') }}
@@ -1452,6 +1528,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-sg-toy-dis-campaign-import:
       if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'campaign-import') }}
@@ -1470,6 +1547,7 @@ jobs:
         AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
         AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
         AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+        AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-sg-toy-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1488,6 +1566,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-sg-toy-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1506,6 +1585,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Toyota Brunei
   dev-hk-bn-toy-dis-car-import:
@@ -1525,6 +1605,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-bn-toy-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1543,6 +1624,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-bn-toy-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1561,6 +1643,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-bn-toy-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1579,6 +1662,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-bn-toy-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1597,6 +1681,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-bn-toy-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1615,6 +1700,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-bn-toy-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1633,6 +1719,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-bn-toy-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1651,6 +1738,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-bn-toy-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1669,6 +1757,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-bn-toy-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'bn') && (inputs.brand == 'all-brands' || inputs.brand == 'toy-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1687,6 +1776,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Mercedes-Benz Philippines
   dev-hk-ph-mer-pas-car-import:
@@ -1706,6 +1796,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-ph-mer-pas-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1724,6 +1815,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-ph-mer-pas-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1742,6 +1834,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-ph-mer-pas-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1760,6 +1853,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-ph-mer-pas-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1778,6 +1872,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-ph-mer-pas-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1796,6 +1891,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-ph-mer-pas-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1814,6 +1910,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-ph-mer-pas-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1832,6 +1929,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-ph-mer-pas-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1850,6 +1948,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-ph-mer-pas-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1868,6 +1967,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Mercedes-Benz Indonesia
   dev-hk-id-mer-pas-car-import:
@@ -1887,6 +1987,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-id-mer-pas-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1905,6 +2006,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-id-mer-pas-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1923,6 +2025,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-id-mer-pas-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1941,6 +2044,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-id-mer-pas-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1959,6 +2063,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-id-mer-pas-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -1977,6 +2082,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-id-mer-pas-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -1995,6 +2101,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-id-mer-pas-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2013,6 +2120,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-id-mer-pas-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2031,6 +2139,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-id-mer-pas-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'mer-pas') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2049,6 +2158,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Suzuki Singapore
   dev-hk-sg-szk-dis-car-import:
@@ -2068,6 +2178,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-sg-szk-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2086,6 +2197,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-sg-szk-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2104,6 +2216,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-sg-szk-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2122,6 +2235,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-sg-szk-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2140,6 +2254,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-sg-szk-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2158,6 +2273,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-sg-szk-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2176,6 +2292,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-sg-szk-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2194,6 +2311,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-sg-szk-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2212,6 +2330,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-sg-szk-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'sg') && (inputs.brand == 'all-brands' || inputs.brand == 'szk-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2230,6 +2349,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Changan Philippines
   dev-hk-ph-cha-dis-car-import:
@@ -2249,6 +2369,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-ph-cha-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2267,6 +2388,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-ph-cha-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2285,6 +2407,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-ph-cha-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2303,6 +2426,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-ph-cha-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2321,6 +2445,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-ph-cha-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2339,6 +2464,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-ph-cha-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2357,6 +2483,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-ph-cha-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2375,6 +2502,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-ph-cha-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2393,6 +2521,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-ph-cha-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'ph') && (inputs.brand == 'all-brands' || inputs.brand == 'cha-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2411,6 +2540,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # Great Wall Indonesia
   dev-hk-id-gwm-dis-car-import:
@@ -2430,6 +2560,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   dev-hk-id-gwm-dis-translation-import:
     if: ${{ inputs.env == 'dev-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2448,6 +2579,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-id-gwm-dis-car-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2466,6 +2598,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   sit-hk-id-gwm-dis-translation-import:
     if: ${{ inputs.env == 'sit-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2484,6 +2617,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-id-gwm-dis-car-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2502,6 +2636,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   uat-hk-id-gwm-dis-translation-import:
     if: ${{ inputs.env == 'uat-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2520,6 +2655,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-id-gwm-dis-car-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2538,6 +2674,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   preprod-hk-id-gwm-dis-translation-import:
     if: ${{ inputs.env == 'preprod-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2556,6 +2693,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-id-gwm-dis-car-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'car-import') }}
@@ -2574,6 +2712,7 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   prod-hk-id-gwm-dis-translation-import:
     if: ${{ inputs.env == 'prod-hk' && (inputs.country == 'all-countries' || inputs.country == 'id') && (inputs.brand == 'all-brands' || inputs.brand == 'gwm-dis') && (inputs.import-type == 'all-imports' || inputs.import-type == 'translation-import') }}
@@ -2592,3 +2731,4 @@ jobs:
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
       AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"

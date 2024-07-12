@@ -349,8 +349,8 @@ jobs:
         IMPORT_COMMAND: pim_campaign full
         ENV: australia-pre-prod
         NAMESPACE: pre-prod
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-        CLUSTER: ${{ vars.CLUSTER_DEV }}
+        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+        CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
       secrets: 
         AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
         AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -368,8 +368,8 @@ jobs:
       IMPORT_COMMAND: pim full
       ENV: australia-pre-prod
       NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -387,8 +387,8 @@ jobs:
       IMPORT_COMMAND: product_api full
       ENV: australia-pre-prod
       NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -406,8 +406,8 @@ jobs:
       IMPORT_COMMAND: stock_push full
       ENV: australia-pre-prod
       NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -425,8 +425,8 @@ jobs:
       IMPORT_COMMAND: pim_translation full
       ENV: australia-pre-prod
       NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -444,8 +444,8 @@ jobs:
         IMPORT_COMMAND: pim_campaign full
         ENV: australia-prod
         NAMESPACE: prod
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-        CLUSTER: ${{ vars.CLUSTER_DEV }}
+        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+        CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
       secrets: 
         AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
         AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -463,8 +463,8 @@ jobs:
       IMPORT_COMMAND: pim full
       ENV: australia-prod
       NAMESPACE: prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -482,8 +482,8 @@ jobs:
       IMPORT_COMMAND: product_api full
       ENV: australia-prod
       NAMESPACE: prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -501,8 +501,8 @@ jobs:
       IMPORT_COMMAND: stock_push full
       ENV: australia-prod
       NAMESPACE: prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -520,8 +520,8 @@ jobs:
       IMPORT_COMMAND: pim_translation full
       ENV: australia-prod
       NAMESPACE: prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
+      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"

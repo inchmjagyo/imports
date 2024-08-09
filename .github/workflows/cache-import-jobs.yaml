@@ -1,4 +1,4 @@
-name: (Cache) Import Job
+name: Clear Cache
 
 on:
   workflow_dispatch:
@@ -14,10 +14,14 @@ on:
           - sit-hk
           - uat
           - uat-hk
-          - preprod
+          - preprod-au
           - preprod-hk
-          - prod
+          - preprod-eu
+          - preprod-latam
+          - prod-au
           - prod-hk
+          - prod-eu
+          - prod-latam
 
 run-name: Running on ${{ inputs.env }}
 
@@ -27,7 +31,7 @@ jobs:
     runs-on:
       group: gha-runner-dxp
     steps:
-      - name: Import job cache details
+      - name: Clear cache details
         run: |
           echo ${{ inputs.env }}
 
@@ -107,7 +111,7 @@ jobs:
         AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # UAT-HK
-  au-hk-uat-hk-cache-import:
+  uat-hk-cache:
     if: ${{ inputs.env == 'uat-hk' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
@@ -152,7 +156,7 @@ jobs:
 
 # AU
   au-preprod-cache:
-        if: ${{ inputs.env == 'preprod' }}
+        if: ${{ inputs.env == 'preprod-au' }}
         uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
         with:
           NAMESPACE: pre-prod
@@ -166,7 +170,7 @@ jobs:
           AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   au-prod-cache:
-      if: ${{ inputs.env == 'prod' }}
+      if: ${{ inputs.env == 'prod-au' }}
       uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
       with:
         NAMESPACE: prod
@@ -181,7 +185,7 @@ jobs:
 
 # EU
   eu-preprod-cache:
-    if: ${{ inputs.env == 'preprod' }}
+    if: ${{ inputs.env == 'preprod-eu' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: pre-prod
@@ -195,7 +199,7 @@ jobs:
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   eu-prod-cache:
-    if: ${{ inputs.env == 'prod' }}
+    if: ${{ inputs.env == 'prod-eu' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: prod
@@ -210,7 +214,7 @@ jobs:
 
 # LATAM
   latam-preprod-cache:
-    if: ${{ inputs.env == 'preprod' }}
+    if: ${{ inputs.env == 'preprod-latam' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: pre-prod
@@ -224,7 +228,7 @@ jobs:
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   latam-prod-cache:
-    if: ${{ inputs.env == 'prod' }}
+    if: ${{ inputs.env == 'prod-latam' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: prod

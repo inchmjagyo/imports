@@ -31,8 +31,23 @@ jobs:
         run: |
           echo ${{ inputs.env }}
 
-# AU-HK
-  au-hk-dev-hk-cache-import:
+# DEV
+  dev-cache:
+    if: ${{ inputs.env == 'dev' }}
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    with:
+      NAMESPACE: dev
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets:
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
+
+# DEV-HK
+  dev-hk-cache:
     if: ${{ inputs.env == 'dev-hk' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
     with:
@@ -46,7 +61,23 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
-  au-hk-sit-hk-cache-import:
+#SIT
+  sit-cache:
+      if: ${{ inputs.env == 'sit' }}
+      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+      with:
+        NAMESPACE: sit
+        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+        CLUSTER: ${{ vars.CLUSTER_DEV }}
+      secrets:
+        AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+        AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+        AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+        AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+        AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
+
+# SIT-HK
+  sit-hk-cache:
     if: ${{ inputs.env == 'sit-hk' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
     with:
@@ -60,6 +91,22 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
+# UAT
+  uat-cache:
+      if: ${{ inputs.env == 'uat' }}
+      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+      with:
+        NAMESPACE: uat
+        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+        CLUSTER: ${{ vars.CLUSTER_DEV }}
+      secrets:
+        AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+        AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+        AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+        AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+        AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
+
+# UAT-HK
   au-hk-uat-hk-cache-import:
     if: ${{ inputs.env == 'uat-hk' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
@@ -74,7 +121,8 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
-  au-hk-preprod-hk-cache-import:
+# AU-HK
+  au-hk-preprod-hk-cache:
     if: ${{ inputs.env == 'preprod-hk' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
     with:
@@ -88,7 +136,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
-  au-hk-prod-hk-cache-import:
+  au-hk-prod-hk-cache:
     if: ${{ inputs.env == 'prod-hk' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
     with:
@@ -103,49 +151,7 @@ jobs:
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # AU
-  au-dev-cache-import:
-    if: ${{ inputs.env == 'dev' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-    with:
-      NAMESPACE: dev
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets:
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  au-sit-cache-import:
-      if: ${{ inputs.env == 'sit' }}
-      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-      with:
-        NAMESPACE: sit
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-        CLUSTER: ${{ vars.CLUSTER_DEV }}
-      secrets:
-        AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-        AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-        AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-        AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-        AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  au-uat-cache-import:
-      if: ${{ inputs.env == 'uat' }}
-      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-      with:
-        NAMESPACE: uat
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-        CLUSTER: ${{ vars.CLUSTER_DEV }}
-      secrets:
-        AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-        AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-        AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-        AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-        AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  au-preprod-cache-import:
+  au-preprod-cache:
         if: ${{ inputs.env == 'preprod' }}
         uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
         with:
@@ -159,7 +165,7 @@ jobs:
           AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
           AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
-  au-prod-cache-import:
+  au-prod-cache:
       if: ${{ inputs.env == 'prod' }}
       uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
       with:
@@ -174,49 +180,7 @@ jobs:
         AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # EU
-  eu-dev-cache-import:
-    if: ${{ inputs.env == 'dev' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-    with:
-      NAMESPACE: dev
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets:
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  eu-sit-cache-import:
-    if: ${{ inputs.env == 'sit' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-    with:
-      NAMESPACE: sit
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets:
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  eu-uat-cache-import:
-    if: ${{ inputs.env == 'uat' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-    with:
-      NAMESPACE: uat
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets:
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  eu-preprod-cache-import:
+  eu-preprod-cache:
     if: ${{ inputs.env == 'preprod' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
     with:
@@ -230,7 +194,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
-  eu-prod-cache-import:
+  eu-prod-cache:
     if: ${{ inputs.env == 'prod' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
     with:
@@ -245,49 +209,7 @@ jobs:
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
 # LATAM
-  latam-dev-cache-import:
-    if: ${{ inputs.env == 'dev' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-    with:
-      NAMESPACE: dev
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets:
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  latam-sit-cache-import:
-    if: ${{ inputs.env == 'sit' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-    with:
-      NAMESPACE: sit
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets:
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  latam-uat-cache-import:
-    if: ${{ inputs.env == 'uat' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
-    with:
-      NAMESPACE: uat
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-      CLUSTER: ${{ vars.CLUSTER_DEV }}
-    secrets:
-      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
-      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
-      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
-      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
-      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
-
-  latam-preprod-cache-import:
+  latam-preprod-cache:
     if: ${{ inputs.env == 'preprod' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
     with:
@@ -301,7 +223,7 @@ jobs:
       AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
-  latam-prod-cache-import:
+  latam-prod-cache:
     if: ${{ inputs.env == 'prod' }}
     uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
     with:

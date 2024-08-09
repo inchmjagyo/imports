@@ -1,4 +1,4 @@
-name: Import Job AU-HK Cache
+name: (Cache) Import Job AU-HK
 
 on:
   workflow_dispatch:
@@ -50,7 +50,7 @@ on:
       #     - translation-import
 
 # run-name: Running on ${{ inputs.env }}-${{ inputs.country }}-${{ inputs.brand }}-${{ inputs.import-type }}
-run-name: Running on ${{ inputs.env }}-${{ inputs.country }}-${{ inputs.brand }}-${{ inputs.import-type }}
+run-name: Running on ${{ inputs.env }}
 
 jobs:
 

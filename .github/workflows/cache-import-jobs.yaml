@@ -34,7 +34,7 @@ jobs:
 # DEV
   dev-cache:
     if: ${{ inputs.env == 'dev' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: dev
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
@@ -49,7 +49,7 @@ jobs:
 # DEV-HK
   dev-hk-cache:
     if: ${{ inputs.env == 'dev-hk' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: dev-hk
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
@@ -64,7 +64,7 @@ jobs:
 #SIT
   sit-cache:
       if: ${{ inputs.env == 'sit' }}
-      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
       with:
         NAMESPACE: sit
         RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
@@ -79,7 +79,7 @@ jobs:
 # SIT-HK
   sit-hk-cache:
     if: ${{ inputs.env == 'sit-hk' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: sit-hk
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
@@ -94,7 +94,7 @@ jobs:
 # UAT
   uat-cache:
       if: ${{ inputs.env == 'uat' }}
-      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
       with:
         NAMESPACE: uat
         RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
@@ -109,7 +109,7 @@ jobs:
 # UAT-HK
   au-hk-uat-hk-cache-import:
     if: ${{ inputs.env == 'uat-hk' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: uat-hk
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
@@ -124,7 +124,7 @@ jobs:
 # AU-HK
   au-hk-preprod-hk-cache:
     if: ${{ inputs.env == 'preprod-hk' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: pre-prod-hk
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
@@ -138,7 +138,7 @@ jobs:
 
   au-hk-prod-hk-cache:
     if: ${{ inputs.env == 'prod-hk' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: prod-hk
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
@@ -153,7 +153,7 @@ jobs:
 # AU
   au-preprod-cache:
         if: ${{ inputs.env == 'preprod' }}
-        uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+        uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
         with:
           NAMESPACE: pre-prod
           RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
@@ -167,7 +167,7 @@ jobs:
 
   au-prod-cache:
       if: ${{ inputs.env == 'prod' }}
-      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+      uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
       with:
         NAMESPACE: prod
         RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
@@ -182,7 +182,7 @@ jobs:
 # EU
   eu-preprod-cache:
     if: ${{ inputs.env == 'preprod' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: pre-prod
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
@@ -196,7 +196,7 @@ jobs:
 
   eu-prod-cache:
     if: ${{ inputs.env == 'prod' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: prod
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
@@ -211,7 +211,7 @@ jobs:
 # LATAM
   latam-preprod-cache:
     if: ${{ inputs.env == 'preprod' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: pre-prod
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
@@ -225,7 +225,7 @@ jobs:
 
   latam-prod-cache:
     if: ${{ inputs.env == 'prod' }}
-    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs-cache.yaml@cache-import-jobs
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-clear-cache.yaml@cache-import-jobs
     with:
       NAMESPACE: prod
       RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}

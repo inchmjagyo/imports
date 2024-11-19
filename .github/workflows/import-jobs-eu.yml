@@ -125,9 +125,9 @@ jobs:
       BRAND: jag-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -221,9 +221,9 @@ jobs:
       BRAND: jag-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -317,9 +317,9 @@ jobs:
       BRAND: jag-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -413,9 +413,9 @@ jobs:
       BRAND: jag-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -509,9 +509,9 @@ jobs:
       BRAND: jag-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -605,9 +605,9 @@ jobs:
       BRAND: lre-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -701,9 +701,9 @@ jobs:
       BRAND: lre-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -797,9 +797,9 @@ jobs:
       BRAND: lre-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -893,9 +893,9 @@ jobs:
       BRAND: lre-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -989,9 +989,9 @@ jobs:
       BRAND: lre-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1142,9 +1142,9 @@ jobs:
       BRAND: byd-dis
       IMPORT_COMMAND: pim_translation full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1161,9 +1161,9 @@ jobs:
       BRAND: byd-dis
       IMPORT_COMMAND: pim full
       ENV: europe-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_EU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_EU }}
+      NAMESPACE: pre-prod-dew
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"

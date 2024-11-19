@@ -250,9 +250,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -269,9 +269,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: product_api full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -288,9 +288,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -593,9 +593,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -612,9 +612,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: product_api full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -631,9 +631,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: stock_push full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -650,9 +650,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -917,9 +917,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -936,9 +936,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: product_api full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -955,9 +955,9 @@ jobs:
       BRAND: subaru
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1260,9 +1260,9 @@ jobs:
       BRAND: sub-dis
       IMPORT_COMMAND: pim_campaign full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1279,9 +1279,9 @@ jobs:
       BRAND: sub-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1298,9 +1298,9 @@ jobs:
       BRAND: sub-dis
       IMPORT_COMMAND: product_api full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1317,9 +1317,9 @@ jobs:
       BRAND: sub-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1527,9 +1527,9 @@ jobs:
       BRAND: dfs-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1546,9 +1546,9 @@ jobs:
       BRAND: dfs-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1775,9 +1775,9 @@ jobs:
       BRAND: dfs-dis
       IMPORT_COMMAND: pim_campaign full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1794,9 +1794,9 @@ jobs:
       BRAND: dfs-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1813,9 +1813,9 @@ jobs:
       BRAND: dfs-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2061,9 +2061,9 @@ jobs:
       BRAND: gly-dis
       IMPORT_COMMAND: pim_campaign full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2080,9 +2080,9 @@ jobs:
       BRAND: gly-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2099,9 +2099,9 @@ jobs:
       BRAND: gly-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2404,9 +2404,9 @@ jobs:
       BRAND: mini-dis
       IMPORT_COMMAND: pim_campaign full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2423,9 +2423,9 @@ jobs:
       BRAND: mini-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2442,9 +2442,9 @@ jobs:
       BRAND: mini-dis
       IMPORT_COMMAND: stock_push full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2461,9 +2461,9 @@ jobs:
       BRAND: mini-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2671,9 +2671,9 @@ jobs:
       BRAND: mini-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2690,9 +2690,9 @@ jobs:
       BRAND: mini-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2976,9 +2976,9 @@ jobs:
       BRAND: mot-dis
       IMPORT_COMMAND: pim_campaign full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2995,9 +2995,9 @@ jobs:
       BRAND: mot-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3014,9 +3014,9 @@ jobs:
       BRAND: mot-dis
       IMPORT_COMMAND: stock_push full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3033,9 +3033,9 @@ jobs:
       BRAND: mot-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3243,9 +3243,9 @@ jobs:
       BRAND: mot-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3262,9 +3262,9 @@ jobs:
       BRAND: mot-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3548,9 +3548,9 @@ jobs:
       BRAND: bmw-dis
       IMPORT_COMMAND: pim_campaign full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3567,9 +3567,9 @@ jobs:
       BRAND: bmw-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3586,9 +3586,9 @@ jobs:
       BRAND: bmw-dis
       IMPORT_COMMAND: stock_push full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3605,9 +3605,9 @@ jobs:
       BRAND: bmw-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3872,9 +3872,9 @@ jobs:
       BRAND: bmw-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3891,9 +3891,9 @@ jobs:
       BRAND: bmw-dis
       IMPORT_COMMAND: stock_push full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -3910,9 +3910,9 @@ jobs:
       BRAND: bmw-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4101,9 +4101,9 @@ jobs:
       BRAND: mer-pas
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4120,9 +4120,9 @@ jobs:
       BRAND: mer-pas
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4292,9 +4292,9 @@ jobs:
       BRAND: mer-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4311,9 +4311,9 @@ jobs:
       BRAND: mer-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4426,9 +4426,9 @@ jobs:
       BRAND: mer-com
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4579,9 +4579,9 @@ jobs:
       BRAND: gwm-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4598,9 +4598,9 @@ jobs:
       BRAND: gwm-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4827,9 +4827,9 @@ jobs:
       BRAND: hin-dis
       IMPORT_COMMAND: pim_campaign full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4846,9 +4846,9 @@ jobs:
       BRAND: hin-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -4865,9 +4865,9 @@ jobs:
       BRAND: hin-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -5056,9 +5056,9 @@ jobs:
       BRAND: szk-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -5075,9 +5075,9 @@ jobs:
       BRAND: szk-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -5247,9 +5247,9 @@ jobs:
       BRAND: szk-dis
       IMPORT_COMMAND: pim full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -5266,9 +5266,9 @@ jobs:
       BRAND: szk-dis
       IMPORT_COMMAND: pim_translation full
       ENV: brazil-pre-prod
-      NAMESPACE: pre-prod
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_LATAM }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_LATAM }}
+      NAMESPACE: pre-prod-brs
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"

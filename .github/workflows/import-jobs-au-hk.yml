@@ -185,9 +185,9 @@ jobs:
       BRAND: lex-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -204,9 +204,9 @@ jobs:
       BRAND: lex-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -376,9 +376,9 @@ jobs:
       BRAND: lex-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -395,9 +395,9 @@ jobs:
       BRAND: lex-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -567,9 +567,9 @@ jobs:
       BRAND: lex-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -586,9 +586,9 @@ jobs:
       BRAND: lex-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -815,9 +815,9 @@ jobs:
       BRAND: grw-dis
       IMPORT_COMMAND: stock_push full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -834,9 +834,9 @@ jobs:
       BRAND: grw-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -853,9 +853,9 @@ jobs:
       BRAND: grw-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1101,9 +1101,9 @@ jobs:
       BRAND: toy-dis
       IMPORT_COMMAND: stock_push full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1120,9 +1120,9 @@ jobs:
       BRAND: toy-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1139,9 +1139,9 @@ jobs:
       BRAND: toy-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1444,9 +1444,9 @@ jobs:
       BRAND: toy-dis
       IMPORT_COMMAND: stock_push full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1463,9 +1463,9 @@ jobs:
         BRAND: toy-dis
         IMPORT_COMMAND: pim_campaign full
         ENV: hong-kong-pre-prod
-        NAMESPACE: pre-prod-hk
-        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-        CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+        NAMESPACE: pre-prod-hk-aue
+        RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+        CLUSTER: ${{ vars.CLUSTER_DEV }}
       secrets: 
         AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
         AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1482,9 +1482,9 @@ jobs:
       BRAND: toy-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1501,9 +1501,9 @@ jobs:
       BRAND: toy-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1711,9 +1711,9 @@ jobs:
       BRAND: toy-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1730,9 +1730,9 @@ jobs:
       BRAND: toy-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1902,9 +1902,9 @@ jobs:
       BRAND: mer-pas
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -1921,9 +1921,9 @@ jobs:
       BRAND: mer-pas
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2093,9 +2093,9 @@ jobs:
       BRAND: mer-pas
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2112,9 +2112,9 @@ jobs:
       BRAND: mer-pas
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2284,9 +2284,9 @@ jobs:
       BRAND: szk-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2303,9 +2303,9 @@ jobs:
       BRAND: szk-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2475,9 +2475,9 @@ jobs:
       BRAND: cha-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2494,9 +2494,9 @@ jobs:
       BRAND: cha-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2666,9 +2666,9 @@ jobs:
       BRAND: gwm-dis
       IMPORT_COMMAND: pim full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
@@ -2685,9 +2685,9 @@ jobs:
       BRAND: gwm-dis
       IMPORT_COMMAND: pim_translation full
       ENV: hong-kong-pre-prod
-      NAMESPACE: pre-prod-hk
-      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_PROD_AU }}
-      CLUSTER: ${{ vars.CLUSTER_PROD_AU }}
+      NAMESPACE: pre-prod-hk-aue
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
     secrets: 
       AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
       AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"

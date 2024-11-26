@@ -1,0 +1,214 @@
+name: Import Job AU New
+
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        type: choice
+        default: dev
+        description: Select env
+        options:
+          - dev
+          - sit
+          - uat
+          - preprod
+          - prod
+      country:
+        type: choice
+        default: all-countries
+        description: Select country
+        options:
+          - all-countries
+          - au
+          - au-au
+          - nz
+      brand:
+        type: choice
+        default: all-brands
+        description: Select brand
+        options:
+          - all-brands
+          - sub-dis
+      import-type:
+        type: choice
+        default: all-imports
+        description: Select import type
+        options:
+          - all-imports
+          - campaign-import
+          - car-import
+          - translation-import
+          - product-api
+          - stock-push
+
+run-name: Running on ${{ inputs.env }}-${{ inputs.country }}-${{ inputs.brand }}-${{ inputs.import-type }}
+
+jobs:
+
+  details:
+    if: ${{ inputs.import-type != 'all-imports' }}
+    outputs:
+      region_cmd: ${{ steps.parse_json.outputs.regionCommands }}
+
+    runs-on:
+      group: gha-runner-dxp
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Import job details
+        run: |
+          echo ${{ inputs.env }} ${{ inputs.country }} ${{ inputs.brand }} ${{ inputs.import-type }}
+
+      - name: Read and parse JSON file
+        id: parse_json
+        run: |
+          # Use jq to parse the JSON file and extract values
+          regionCmd=$(jq -r --arg importtype ${{ inputs.import-type }} '.["au"][$importtype]' ./import-config.json)
+
+          # Set the output so it can be referenced in subsequent steps
+          echo "::set-output name=regionCommands::$regionCmd"
+
+  running-import:
+    if: ${{ inputs.country != 'all-countries' && inputs.brand != 'all-brands' && inputs.import-type != 'all-imports' }}
+    uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
+    needs: details
+    with:
+      REGION: au
+      COUNTRY: ${{ inputs.country }}
+      BRAND: ${{ inputs.brand }}
+      IMPORT_COMMAND: ${{ needs.details.outputs.region_cmd }}
+      ENV: ${{ inputs.env }}
+      NAMESPACE: ${{ inputs.env }}
+      RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+      CLUSTER: ${{ vars.CLUSTER_DEV }}
+    secrets: 
+      AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+      AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+      AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+      AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+      AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
+
+
+  running-import-all-country:
+    runs-on:
+      group: gha-runner-dxp
+    if: ${{ inputs.country == 'all-countries' && inputs.brand != 'all-brands' && inputs.import-type != 'all-imports' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        countries: 
+          - au
+          - au-au
+          - nz
+
+    steps:
+      - name: Import job details
+        run: |
+          echo ${{ matrix.countries }}
+
+      - name: Execute running-import-all-country
+        uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
+        needs: details
+        with:
+          REGION: au
+          COUNTRY: ${{ matrix.countries }}
+          BRAND: ${{ inputs.brand }}
+          IMPORT_COMMAND: ${{ needs.details.outputs.region_cmd }}
+          ENV: ${{ inputs.env }}
+          NAMESPACE: ${{ inputs.env }}
+          RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+          CLUSTER: ${{ vars.CLUSTER_DEV }}
+        secrets: 
+          AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+          AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+          AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+          AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+          AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
+
+  running-import-all-country-all-brand:
+    runs-on:
+      group: gha-runner-dxp
+    if: ${{ inputs.country == 'all-countries' && inputs.brand == 'all-brands' && inputs.import-type != 'all-imports' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        countries: 
+          - au
+          - au-au
+          - nz
+        brand:
+          - sub-dis
+
+    steps:
+      - name: Import job details
+        run: |
+          echo ${{ matrix.countries }}
+
+      - name: Execute running-import-all-country
+        uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
+        needs: details
+        with:
+          REGION: au
+          COUNTRY: ${{ matrix.countries }}
+          BRAND: ${{ matrix.brand }}
+          IMPORT_COMMAND: ${{ needs.details.outputs.region_cmd }}
+          ENV: ${{ inputs.env }}
+          NAMESPACE: ${{ inputs.env }}
+          RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+          CLUSTER: ${{ vars.CLUSTER_DEV }}
+        secrets: 
+          AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+          AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+          AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+          AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+          AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
+
+  running-import-all-country-all-brand-all-import:
+    runs-on:
+      group: gha-runner-dxp
+    if: ${{ inputs.country == 'all-countries' && inputs.brand == 'all-brands' && inputs.import-type == 'all-imports' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        countries: 
+          - au
+          - au-au
+          - nz
+        brand:
+          - sub-dis
+        import-type:
+          - campaign-import
+          - car-import
+          - translation-import
+          - product-api
+          - stock-push
+
+    steps:
+      - name: Read and parse JSON file
+        id: parse_json
+        run: |
+          # Use jq to parse the JSON file and extract values
+          regionCmd=$(jq -r --arg importtype ${{ matrix.import-type }} '.["au"][$importtype]' ./import-config.json)
+
+          # Set the output so it can be referenced in subsequent steps
+          echo "::set-output name=regionCommands::$regionCmd"
+
+      - name: Execute running-import-all-country
+        uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
+        needs: details
+        with:
+          REGION: au
+          COUNTRY: ${{ matrix.countries }}
+          BRAND: ${{ matrix.brand }}
+          IMPORT_COMMAND: ${{ steps.parse_json.outputs.regionCommands }}
+          ENV: ${{ inputs.env }}
+          NAMESPACE: ${{ inputs.env }}
+          RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
+          CLUSTER: ${{ vars.CLUSTER_DEV }}
+        secrets: 
+          AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
+          AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"
+          AZURE_UK_TENANT_ID: "${{ secrets.AZURE_UK_TENANT_ID }}"
+          AZURE_UK_SUBSCRIPTION_ID: "${{ secrets.AZURE_UK_SUBSCRIPTION_ID }}"
+          AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"

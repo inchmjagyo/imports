@@ -1,0 +1,27 @@
+{
+    "au-hk": {
+        "campaign-import": "pim_campaign full",
+        "car-import": "pim full",
+        "stock-push": "stock_push full",
+        "translation-import": "pim_translation full"
+    },
+    "au": {
+        "campaign-import": "pim_campaign full",
+        "car-import": "pim full",
+        "product-api": "product_api full",
+        "stock-push": "stock_push full",
+        "translation-import": "pim_translation full"
+    },
+    "eu": {
+        "car-import": "pim full",
+        "translation-import": "pim_translation full"
+    },
+    "latam": {
+        "campaign-import": "pim_campaign full",
+        "car-import": "pim full",
+        "product-api": "product_api full",
+        "stock-push": "stock_push full",
+        "translation-import": "pim_translation full"
+    }
+}
+

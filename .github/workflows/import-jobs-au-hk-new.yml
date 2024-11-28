@@ -112,12 +112,8 @@ jobs:
 
     runs-on:
       group: gha-runner-dxp
-      
-    steps:
-      - name: Import job details
-        run: |
-          echo ${{ matrix.countries }}
 
+    steps:
       - name: Execute running-import-all-country
         uses: inchcape-dxp/dso-ci-templates-dxp/.github/workflows/x15-import-jobs.yaml@v1.3.3
         with:
@@ -128,7 +124,7 @@ jobs:
           ENV: ${{ inputs.env }}
           NAMESPACE: ${{ inputs.env }}
           RESOURCE_GROUP: ${{ vars.RESOURCE_GROUP_DEV }}
-          CLUSTER: ${{ vars.CLUSTER_DEV }}
+          CLUSTER: ${{CLUSTER_ vars.DEV }}
         secrets: 
           AZURE_UK_CLIENT_ID: "${{ secrets.AZURE_UK_CLIENT_ID }}"
           AZURE_UK_SECRET_KEY: "${{ secrets.AZURE_UK_SECRET_KEY }}"

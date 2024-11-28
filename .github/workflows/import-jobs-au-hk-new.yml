@@ -98,8 +98,6 @@ jobs:
       AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   running-import-all-country:
-    runs-on:
-      group: gha-runner-dxp
     if: ${{ inputs.country == 'all-countries' && inputs.brand != 'all-brands' && inputs.import-type != 'all-imports' }}
     strategy:
       fail-fast: false
@@ -136,8 +134,6 @@ jobs:
           AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   running-import-all-country-all-brand:
-    runs-on:
-      group: gha-runner-dxp
     if: ${{ inputs.country == 'all-countries' && inputs.brand == 'all-brands' && inputs.import-type != 'all-imports' }}
     strategy:
       fail-fast: false
@@ -182,8 +178,6 @@ jobs:
           AZURE_CONTAINER_REGISTRY_PASSWORD: "${{ secrets.AZURE_CONTAINER_REGISTRY_PASSWORD }}"
 
   running-import-all-country-all-brand-all-import:
-    runs-on:
-      group: gha-runner-dxp
     if: ${{ inputs.country == 'all-countries' && inputs.brand == 'all-brands' && inputs.import-type == 'all-imports' }}
     strategy:
       fail-fast: false
